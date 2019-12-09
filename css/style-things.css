@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display:600&display=swap');
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	/*font-family: 'Mansalva', cursive;*/
+}
+
+nav {
+
+    border :1px solid green;
+	position: fixed;     /*  position - fixed */
+	left: 0;
+	top: 0;
+    width: 100%;
+    height: 1000;
+	display: flex;       /* flex box */
+	
+}
+
+
+nav a:link{
+	padding: 20px;
+	background: #fff;
+	flex-grow: 1;
+	text-decoration: none;
+	color:#333;
+	text-align: center;
+}
+
+nav a:visited{
+	color: #444;
+}
+
+nav a:hover{
+	background: green;
+	color: white;
+}
+
+
+
+/* === "things to do" page here === */
+
+#thingstodo{
+	width: 100%;
+	min-height: 30vh;
+	height: auto;
+	background: url(../images/bg4.jpg) no-repeat center center;	
+	background-size: cover;
+	margin-top: 60px;
+	padding: 30px;
+	color: #fff;
+	display: flex;
+	align-items: flex-end;
+/*    text-shadow: 4px 4px 0px rgba(0,0,0,1);*/
+     text-shadow:0 0 .2em #000;
+}
+
+section#flexm {
+	width: 100%;
+	min-height: 100vh;
+	height: auto;
+	border: solid 1px #333;
+	display: flex;
+	flex-flow:  row wrap;
+} 
+
+#flexm article{
+/*	flex: 1 100%;*/
+	width: 100%;
+	border: solid #333 1px;
+	font-family: Gotham, Helvetica, "sans-serif";
+	font-size: 22px;
+	color: #333;
+	padding: 20px;
+
+}
+
+h1 {
+	font-size: 32px;
+}
+
+
+/* ===TABLET LAYOUT ===*/
+/* 600px to 1024px. Inherits style form: Mobile Layout. */
+
+
+@media only screen and (min-width: 600px){
+	h1 {
+		font-size: 36px;
+	}
+
+    body{background:#dd0;}
+	#flexm article {
+		width: 50%;
+	}
+	
+}
+
+@media only screen and (min-width: 1024px){
+	body{background: #add;}
+	h1 {
+		font-size: 42px;
+	}
+	#flexm{
+		align-items: baseline;
+		align-content: center;
+		
+	}
+	#flexm article {
+		width: 25%;
+        min-height: inherit;
+	}
+	
+}
+
+
+
+
+
+
+
+
